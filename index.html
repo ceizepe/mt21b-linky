@@ -30,30 +30,6 @@ h2{
     margin-bottom:20px;
 }
 
-input{
-    width:100%;
-    padding:10px;
-    margin-bottom:10px;
-    border:1px solid #ccc;
-    border-radius:8px;
-    box-sizing:border-box;
-}
-
-button{
-    width:100%;
-    padding:12px;
-    border:none;
-    border-radius:8px;
-    background:#1565c0;
-    color:white;
-    font-size:16px;
-    cursor:pointer;
-}
-
-button:hover{
-    background:#0d47a1;
-}
-
 #status{
     margin-top:15px;
     text-align:center;
@@ -70,41 +46,14 @@ button:hover{
 
     <h2>MT21B Login999</h2>
 
-    <input
-        type="text"
-        id="username"
-        placeholder="Používateľské meno">
-
-    <input
-        type="password"
-        id="password"
-        placeholder="Heslo">
-
-    <button onclick="login()">
-        Prihlásiť
-    </button>
-
-    <div id="status"></div>
+    <div id="status">
+        Čakám na načítanie Firebase...
+    </div>
 
 </div>
 
-<script>
+<script type="module">
 
-function login(){
+import { initializeApp }
+from "https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js";
 
-    const meno =
-        document.getElementById("username").value;
-
-    const heslo =
-        document.getElementById("password").value;
-
-    document.getElementById("status").innerHTML =
-        "Používateľ: " + meno +
-        "<br>Heslo: " + heslo;
-
-}
-
-</script>
-
-</body>
-</html>
