@@ -6,6 +6,7 @@
 <title>MT21B Login999</title>
 
 <style>
+
 body{
     margin:0;
     font-family:Segoe UI,sans-serif;
@@ -49,15 +50,11 @@ button{
     cursor:pointer;
 }
 
-button:hover{
-    background:#0d47a1;
-}
-
 #status{
     margin-top:15px;
     text-align:center;
-    color:red;
 }
+
 </style>
 </head>
 
@@ -65,7 +62,7 @@ button:hover{
 
 <div class="login-box">
 
-    <h2>MT21B Login</h2>
+    <h2>MT21B Login999</h2>
 
     <input
         type="text"
@@ -85,40 +82,18 @@ button:hover{
 
 </div>
 
-<script type="module">
+<script>
 
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js";
+function login(){
 
-import {
-    getAuth,
-    signInWithEmailAndPassword
+    alert("JavaScript funguje ✅");
+
+    document.getElementById("status").innerHTML =
+    "Tlačidlo funguje.";
+
 }
-from "https://www.gstatic.com/firebasejs/10.13.2/firebase-auth.js";
 
-alert("Firebase script sa načítal");
+</script>
 
-const firebaseConfig = {
-
-  apiKey: "AIzaSyA_meCanxxKAIRhzJ0HikuO5pl6SKE0O1s",
-
-  authDomain: "mt21b-8d371.firebaseapp.com",
-
-  databaseURL: "https://mt21b-8d371-default-rtdb.europe-west1.firebasedatabase.app",
-
-  projectId: "mt21b-8d371",
-
-  storageBucket: "mt21b-8d371.firebasestorage.app",
-
-  messagingSenderId: "947214886834",
-
-  appId: "1:947214886834:web:ffe51a821d820a047ca6ab"
-};
-
-const app = initializeApp(firebaseConfig);
-
-const auth = getAuth(app);
-
-window.login = async function(){
-
-    const username =
-    document.getElementById
+</body>
+</html>
