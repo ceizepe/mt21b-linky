@@ -50,9 +50,15 @@ button{
     cursor:pointer;
 }
 
+button:hover{
+    background:#0d47a1;
+}
+
 #status{
     margin-top:15px;
     text-align:center;
+    color:#1565c0;
+    font-weight:bold;
 }
 
 </style>
@@ -72,28 +78,4 @@ button{
     <input
         type="password"
         id="password"
-        placeholder="Heslo">
-
-    <button onclick="login()">
-        Prihlásiť
-    </button>
-
-    <div id="status"></div>
-
-</div>
-
-<script>
-
-function login(){
-
-    alert("JavaScript funguje ✅");
-
-    document.getElementById("status").innerHTML =
-    "Tlačidlo funguje.";
-
-}
-
-</script>
-
-</body>
-</html>
+        
